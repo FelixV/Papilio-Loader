@@ -64,9 +64,7 @@ public class TargetPanel extends JPanel implements ActionListener, FocusListener
 			new FileNameExtensionFilter("Hex files", "hex")};
 
 	private String[] targetBoards = 
-			{AUTO_DETECT_FPGA, 
-			 "ButterflyOne v2.02", "PapilioOne v2.03", "PapilioOne v2.04-250k", 
-			 "PapilioOne v2.04-500k", "PapilioOne v2.50-250k", "PapilioOne v2.50-500k"};
+			{AUTO_DETECT_FPGA};
 	private final String[] labelCaptions = {"Target board:", 
 	  				"Target .bit file:", "Target .bmm file:", "Program .hex file:"};
 	private final String[] buttonTexts = {"Info", "Select...", "Select...", "Select..."};
@@ -164,7 +162,7 @@ public class TargetPanel extends JPanel implements ActionListener, FocusListener
  *		takes to start up and the more memory it will take. As an application developer 
  *		you have to balance this with other design constraints you may have. 
  *		We are not suggesting you turn your application into a single monolithic class in 
- *		hopes of cutting down startup time and memory footprint — this would lead to 
+ *		hopes of cutting down startup time and memory footprint this would lead to 
  *		unnecessary headaches and maintenance burdens. 
  *	------------------------------------------------------------------------------------ */
 
